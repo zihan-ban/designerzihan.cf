@@ -1,0 +1,293 @@
+html {
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(-90deg,#262626, #111111);
+  margin: 0;
+  transition: 1s all ease-in-out;
+}
+
+::-webkit-scrollbar {
+  --scroll-size: 5px;
+  --scroll-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: var(--scroll-size, 10px);
+  height: var(--scroll-size, 10px);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-track, #1d1d1d);
+  border-radius: var(--scroll-track-radius, var(--scroll-radius));
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color, #ff733e);
+  background-image: var(--scroll-thumb, none);
+  border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+}
+
+/* The navbar container */
+  nav {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  /* Navbar links */
+  nav a {
+    letter-spacing: -2px;
+    font-size: smaller;
+    font-family: LuloClean;
+    display: inline-block;
+    color: #ff733e;
+    text-align: center;
+    margin: 35px 40px 35px 40px;
+    text-decoration: none;
+    position: sticky;
+    transition: 0.3s ease-in-out all;
+  }
+  nav .bal {
+    position: static;
+    margin-right: 300px;
+  }
+  
+  /* Links - change color on hover */
+  nav a:hover {
+    transition: 0.3s ease-in-out all;
+    color: #e9e9e9;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  main .introduction {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 50px 0px 50px;
+    padding: 150px 0px 201px 100px;
+    color: #e9e9e9;
+  }
+
+  main .introduction .name {
+    font-weight: 500;
+    font-size: 30px;
+    margin: auto;
+    color: #ff733e;
+  }
+
+  main .introduction hr {
+    width: 58%;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
+  main .introduction .name .span {
+    display: contents;
+    color: #e9e9e9;
+  }
+  
+  main .introduction h1 {
+    font-weight: 600;
+    font-size: 70px;
+    margin: 10px 0px 7px;
+  }
+
+  main .introduction .description {
+    font-weight: lighter;
+    line-height: 24px;
+    font-size: medium;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    background-color: #ff733e;
+    color: #e9e9e9;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-size: small;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+
+  button:hover {
+    background-color: rgb(255, 138, 95);
+  }
+
+  .special {
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif; 
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.400);
+    max-width: 2000px;
+    height: 854px;
+    margin: auto;
+  }
+
+  .special h3 {
+    font-weight: 600;
+    color: #e9e9e9;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .special h3 span {
+    color: #ff733e;
+  }
+
+ .gallary {
+    display: flex;
+    height: 687px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .column {
+    padding: 0 5px;
+  }
+
+  .column div {
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #111111;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+  }
+
+  .column div:hover {
+    transform: scale(1.01, 1.01);
+    filter: brightness(110%);
+    letter-spacing: 2px;
+  }
+
+  .column div p {
+    position: absolute;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    font-size: 27px;
+    margin: 28px 0px 0px 28px;
+  }
+
+  .box1 {
+    background-image: url(/images/gallary/Logo/aeno-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 320px;
+  }
+
+  .box2 {
+    background-image: url(/images/gallary/Artwork/love\(without-text\)-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    color: white;
+    width: 500px;
+    height: 320px;
+  }
+
+  .box3 {
+    background-image: url(/images/gallary/Post/apex\ shoe\ ad-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    color: white;
+    width: 700px;
+    height: 320px;
+    margin-left: -200px;
+  }
+
+  .box4 {
+    background-image: url(/images/gallary/Card/Minimal-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 10%;
+    color: rgb(17,17,17);
+    width: 500px;
+    height: 320px;
+  }
+
+  .box5 {
+    background-image: url(/images/gallary/Book/mombati-mockup-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% 0%;
+    width: 300px;
+    height: 650px;
+  }
+
+  .view {
+    position: absolute;
+    right: 0px;
+    margin: 0px 133px 0px 133px;
+  }
+
+  .order {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    font-size: 40px;
+    color: white;
+  }
+
+  .mail {
+    margin: 20px;
+    font-size: medium;
+    padding: 15px;
+  }
+
+  footer {
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  footer i {
+    padding: 10px;
+    transition: 0.2s all ease-in-out ;
+  }
+
+  footer i:hover {
+    transform: rotate(-10deg);
+  }
+
+  footer i:hover a {
+    transform: rotate(-10deg);
+    color: #ff733e;
+  }
+  
+  iconify-icon {
+    transform: rotate(0deg);
+    transition: 0.2s all ease-in-out;
+  }
+
+  iconify-icon:hover {
+    transform: rotate(-10deg);
+    color: #ff733e;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
